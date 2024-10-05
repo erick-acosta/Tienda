@@ -22,6 +22,7 @@ const CiudadDropdown = () => {
 
     return(
         <>
+        
         <Button className="ciudadDropdown" onClick={()=>setisOpenModal(true)}>
                         <div className=" info d-flex flex-column">
                             <span className='label'> Ciudad</span>
