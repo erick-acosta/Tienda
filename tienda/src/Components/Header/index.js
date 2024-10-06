@@ -30,8 +30,8 @@ const Header = () => {
               </div>
 
               <div className="col-sm-10 d-flex align-items-center part2">
+              
                 <CiudadDropdown />
-
                 <SearchBox />
 
                 <div className=" part3 d-flex align-items-center ml-auto">

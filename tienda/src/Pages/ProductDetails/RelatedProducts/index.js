@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import React from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -18,14 +17,14 @@ const RelatedProducts = (props) => {
             
         </div>
  
-            <div className="product_row w-100 mt-0">
+            <div className="product_row w-100 mt-4">
             <Swiper
-        slidesPerView={5}
-        spaceBetween={0}
-        navigation={true}
-        slidesPerGroup={3}
-        modules={[Navigation]}
-        className="mySwiper"
+                slidesPerView={4}
+                spaceBetween={10}
+                navigation={true}
+                slidesPerGroup={3}
+                modules={[Navigation]}
+                className="mySwiper"
       >
 
 
