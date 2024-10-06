@@ -6,6 +6,7 @@ import { MdOutlineCompareArrows } from "react-icons/md";
 import Quantilybox from "../Quantilybox";
 import ProductZoom from "../ProductZoom";
 import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
 import Cart from "../../Pages/Cart";
 
 
@@ -17,8 +18,8 @@ const ProductModal = (props) => {
             <Dialog open={true} className="productModal" onClose={() =>props.closeProductModal()}>
                 
             
-                
-                <h4 class="mb-1 font-weight-bold"> nombre del producto</h4>
+                <Button className="close_" onClick={() =>props.closeProductModal()}> <IoMdClose /></Button>                
+                <h4 class="mb-1 font-weight-bold"> Nombre del producto</h4>
                 <div className="d-flex align-items-center">
                     <div className="d-flex align-items-center mr-4">
                     <span> <b>Modelo:</b></span>
@@ -55,7 +56,7 @@ const ProductModal = (props) => {
 
                     <Quantilybox/>
                         
-                    <Link to={"Cart"}> <Button className="btn-blue btn-lg btn-big btn-round ml-3">  Agregar Al Carrito</Button> </Link> 
+                    <Link to={"ProductDetails"}> <Button className="btn-blue btn-lg btn-big btn-round ml-3"> Seleciona para comprar </Button> </Link> 
                         
                      </div>
 

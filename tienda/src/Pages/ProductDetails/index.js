@@ -8,6 +8,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { MdOutlineCompareArrows } from "react-icons/md";
 import Tooltip from '@mui/material/Tooltip';
 import RelatedProducts from "./RelatedProducts";
+import { Link } from "react-router-dom";
+import Cart from "../Cart";
 
 const ProductDetails = () => {
 
@@ -84,7 +86,7 @@ const isActive =(index => {
 
                                 <div className="d-flex align-items-center mt-3">
                                     <Quantilybox/>
-                                    <Button className="btn-blue btn-lg btn-big btn-round"> <BsCartFill /> &nbsp; Agregar Al Carrito</Button>
+                                    <Link to="/cart"><Button className="btn-blue btn-lg btn-big btn-round"> <BsCartFill /> &nbsp; Agregar Al Carrito</Button></Link>
 
                                     <Tooltip title="Lista de Deseos" placement="top">
                                     <Button className="btn-blue btn-lg btn-big btn-circle ml-4"> <FaRegHeart /></Button>

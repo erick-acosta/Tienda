@@ -14,8 +14,10 @@ const HomeBanner = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mt-3 ">
       <div className="HomeBannerSection">
+
+      
         <Slider {...settings}>
           <div className="item">
             <img
