@@ -59,7 +59,7 @@ const Sidebar = ( ) => {
                 <div className="filterBox">
                 <h6>Filtro por Precios</h6>
 
-                <RangeSlider value={value} onInput={setValue} min={1} max={1000} step={1}/>
+                <RangeSlider value={value} onInput={setValue} min={1} max={300} step={1}/>
 
                 <div className="d-flex pt-2 pb-2 priceRange">
                     <span>Desde: <strong className='text-dark'> $: {value[0]}</strong></span>

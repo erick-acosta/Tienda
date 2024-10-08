@@ -7,7 +7,7 @@ import Quantilybox from "../Quantilybox";
 import ProductZoom from "../ProductZoom";
 import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
-import Cart from "../../Pages/Cart";
+
 
 
 const ProductModal = (props) => {

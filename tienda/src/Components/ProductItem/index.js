@@ -4,7 +4,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import  Button  from "@mui/material/Button";
 import ProductModal from '../ProductModal';
 import { useState } from 'react';
-import logo from '../../assets/img/AVATAR IG.png';
+import disfras1 from '../../assets/img/disfras2.png';
 
 const ProductItem = (props) => {
 
@@ -18,8 +18,8 @@ const ProductItem = (props) => {
     return(
         <>
             <div className={`productItem ${props.itemView}`}>
-        <div className="imgWrapper">
-        <img src={logo} className="w-100"></img>
+        <div className="imgWrapper ">
+        <img src={disfras1} className="w-100"  ></img>
     <span className="badge badge-primary">25%</span>
 
         <div className="actions">

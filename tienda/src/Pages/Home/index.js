@@ -55,7 +55,7 @@ const Home = () => {
               <div className="product_row w-100 mt-5">
                 <Swiper
                   slidesPerView={4}
-                  spaceBetween={0}
+                  spaceBetween={2}
                   navigation={false}
                   slidesPerGroup={2}
                   modules={[Navigation]}
@@ -92,7 +92,7 @@ const Home = () => {
                 </Swiper>
               </div>
            
-              <div className="d-flex align-items-center mt-4">
+              <div className="d-flex align-items-center mt-4 pt-1">
               <div className="info w-75">
                   <h3 className="mb-2 mt-5 hd">Productos Mas Visitados</h3>
                   <p className="text-sml mb-0">

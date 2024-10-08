@@ -155,14 +155,14 @@ nav .navPart2 ul li:hover .submenu { opacity: 1; visibility: inherit; top: 100%}
 
 .viewAllBtn svg{font-size: 20px;}
 
-.productItem{width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); cursor: pointer; position: relative;}
+.productItem{width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); cursor: pointer; position: relative; border-radius: 10px;}
 
 .productItem .badge{ display: inline-block; padding: 7px 10px; position: absolute; top: 10px; left: 10px ; z-index: 100;}
 
 .productItem .info{padding: 15px;}
 .productItem .info h4{ font-size: 16px; font-weight: 600;}
 
-.productItem .actions{position: absolute ; top: 20px; right:-100px ; z-index: 100; display: flex; flex-direction: column; gap: 10px; transition: all 0.5s ease-in-out;}
+.productItem .actions{position: absolute ; top: 20px; right: 20px; z-index: 100; display: flex; flex-direction: column; gap: 10px; opacity: 0;}
 
 .productItem .actions button{ display: flex; align-items: center; justify-content: center; min-width: 40px !important; height: 40px !important; width: 40px !important; border: 1px solid rgba(0,0,0,0.1) !important; border-radius: 50% !important; background: #fff !important; box-shadow: 0 1px 3px rgba(0,0,0 / 12%), 0 1px 2px rgba(0,0,0 / 24%) !important; transition: all 0.2s;}
 
@@ -175,7 +175,8 @@ nav .navPart2 ul li:hover .submenu { opacity: 1; visibility: inherit; top: 100%}
 .productItem .imgWrapper{overflow: hidden;}
 .productItem .imgWrapper img{ transition: all 0.3s ease-in-out;}
 .productItem .imgWrapper:hover .actions{opacity: 1; right: 10px;}
-.productItem .imgWrapper:hover img{transform: scale(1.1);}
+.productItem .imgWrapper:hover img{transform: scale(1.1); }
+.productItem:hover {transform: scale(1, 1.02); transition: all 0.2s ease-in-out; box-shadow: 0 3px 2px #553d51 }
 
 
 .info .oldPrice{font-size: 16px; font-weight: bold; color: rgba(0,0,0,0.3); text-decoration: line-through;}
@@ -249,14 +250,18 @@ footer .copyright ul li svg:hover{color: #fff !important;}
 
 .productZoom{ width: 100%; height: auto; padding: 0px; overflow: hidden; border-radius: 15px;}
 .productZoom .badge{ position: absolute; top: 20px; left: 20px; z-index: 100; }
-.zoomSliderBig{width: 100% !important;}
+
+.zoomSliderBig{width: 85% !important;}
 
 .zoomSlider{padding-top: 30px;}
-.zoomSlider .slick-slide{padding-right: 20px !important ;}
 .zoomSlider *{outline: none !important;}
 .zoomSlider .item{ border: 2px solid transparent !important; overflow: hidden; border-radius: 15px; cursor: pointer;}
-.zoomSlider .slick-current .item{border: 2px solid #8b3797 !important;}
-.zoomSlider .slick-arrow{top: 55% !important; zoom: 80% !important;}
+.zoomSlider .item_active{ border : 2px solid #8b3797 !important;}
+.zoomSlider  .swiper-button-prev{width: 30px !important ; height: 30px !important; top: 60% !important; }
+
+
+
+
 
 
 .quantityDrop{width: 200px; gap: 10px;}
@@ -267,3 +272,50 @@ footer .copyright ul li svg:hover{color: #fff !important;}
 
 .productModal .actions button{color: #000 !important; border: 1px solid rgba(0,0,0,0.1) !important; font-size: 10px !important; }
 .productModal .actions button svg{font-size: 15px !important;}
+.productModal .actions button:hover{background: #f1f1f1; margin-bottom: 10px;}
+
+.product_Listing_Page{padding: 45px 0px;}
+.product_Listing_Page .productListing{gap: 20px;}
+.product_Listing_Page .productListing .sidebar{width: 20%; flex: 0 0 20%; }
+.product_Listing_Page .productListing .sidebar .styky{position: sticky; top: 20px; }
+.product_Listing_Page .productListing .sidebar .filterBox{ margin-bottom: 35px;}
+.product_Listing_Page .productListing .sidebar .filterBox h6{font-weight: 700; font-size: 12px;}
+.product_Listing_Page .productListing .sidebar .scroll{padding-left: 10px;}
+.product_Listing_Page .productListing .sidebar .scroll::-webkit-scrollbar{width: 5px !important; max-height: 180px; overflow-y: scroll; overflow-x: hidden; height: 5px !important;}
+.product_Listing_Page .productListing .sidebar .scroll  ul li{list-style: none; margin-bottom: 0px; width: 100%;}
+.product_Listing_Page .productListing .sidebar .scroll  ul{ margin-bottom: 0px;}
+
+.css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root {padding: 2px !important;}
+.css-1edfpdg-MuiTypography-root{font-size: 13px !important;}
+.css-20bmp1-MuiSvgIcon-root{width: 20px !important; height: 20px !important;}
+.css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-1y5vrnu-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+  color: #8b3797  !important;
+}
+
+
+
+.range-slider{height: 5px !important;}
+.range-slider .range-slider__range, .range-slider .range-slider__thumb{ background: #8b3797 !important;}
+.range-slider .range-slider__thumb{width: 15px !important; height: 15px !important;}
+
+
+.product_Listing_Page .productListing .content_right{width: 78%; flex: 0 0 78%; padding-left:  50px;}
+.product_Listing_Page .productListing .content_right .showBy{width: 100% ; height: auto; background: #fcf7fd; padding: 15px 25px;}
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button{min-width: 35px !important; height: 35px !important; width: 35px !important; border-radius: 50% !important; color: #000; }
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button svg{ color: #000; font-size: 18px !important; opacity: 0.3;}
+
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button.act svg{opacity: 1 !important;}
+.product_Listing_Page .productListing .content_right .showBy .btnWrapper button:hover svg{opacity: 1;}
+
+.showByFilter button{min-width: auto; color: #8b3797;}
+.showByFilter button svg{color: #8b3797;  opacity: 0.6; margin-left: 5px;}
+.showByFilter button.act svg{opacity: 1 !important;}
+
+.showPerpageDropdown .MuiPaper-root{ width: 80px !important;}
+
+.productListing{display: flex; gap: 20px; flex-wrap: wrap;}
+.productListing .productItem.four{width: 23%;}
+.productListing .productItem.three{width: 31.5%; transition: all 0.5 ease-in;}
+.productListing .productItem.one{width: 100%; display: flex ; align-items: center;}
+.productListing .productItem.one .imgWrapper{ width: 25%; }
