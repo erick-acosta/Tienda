@@ -6,9 +6,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
-
-import ProductDetails from "./Pages/ProductDetails";
-
 import { createContext, useState } from "react";
 import ProductModal from "./Components/ProductModal";
 import SignUp from "./Pages/SignUp";
@@ -17,6 +14,7 @@ import SignIn from "./Pages/SignIn";
 import Cart from "./Pages/Cart";
 import Home from "./Pages/Home";
 import Listing from "./Pages/Listing";
+import ProductDetails from "./Pages/ProductDetails";
 
 const MyContext = createContext();
 
@@ -51,8 +49,7 @@ function App() {
    <Routes>
       <Route path="/" exact={true} element={<Home/>} />
       <Route path="/cat/:id" exact={true} element={<Listing />} />
-      
-      <Route path="/ProductDetails" exact={true} element={<ProductDetails />} />
+      <Route path="/product/:id" exact={true} element={<ProductDetails />} />
       
       <Route path="/cart" exact={true} element={<Cart />} />
       <Route path="/signIn" exact={true} element={<SignIn />} />

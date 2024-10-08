@@ -9,7 +9,7 @@ import disfras1 from '../../assets/img/disfras2.png'
 import disfras2 from '../../assets/img/disfras2.1.png'
 import disfras3 from '../../assets/img/disfras2.2.png'
 import disfras4 from '../../assets/img/disfras2.3.png'
-import { MyContext } from '../../App';
+
 
 
 

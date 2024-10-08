@@ -56,7 +56,7 @@ const ProductModal = (props) => {
 
                     <Quantilybox/>
                         
-                    <Link to={"ProductDetails"}> <Button className="btn-blue btn-lg btn-big btn-round ml-3"> Seleciona para comprar </Button> </Link> 
+                    <Link to={"/product/:id"}> <Button className="btn-blue btn-lg btn-big btn-round ml-3"> Seleciona para comprar </Button> </Link> 
                         
                      </div>
 

@@ -86,7 +86,7 @@ const isActive =(index => {
 
                                 <div className="d-flex align-items-center mt-3">
                                     <Quantilybox/>
-                                    <Link to="/cart"><Button className="btn-blue btn-lg btn-big btn-round"> <BsCartFill /> &nbsp; Agregar Al Carrito</Button></Link>
+                                    <Link to="/Cart"><Button className="btn-blue btn-lg btn-big btn-round"> <BsCartFill /> &nbsp; Agregar Al Carrito</Button></Link>
 
                                     <Tooltip title="Lista de Deseos" placement="top">
                                     <Button className="btn-blue btn-lg btn-big btn-circle ml-4"> <FaRegHeart /></Button>
