@@ -17,10 +17,10 @@ const RelatedProducts = (props) => {
             
         </div>
  
-            <div className="product_row w-100 mt-4">
+            <div className="product_row w-100 mt-2">
             <Swiper
-                slidesPerView={4}
-                spaceBetween={10}
+                slidesPerView={6}
+                spaceBetween={0}
                 navigation={true}
                 slidesPerGroup={3}
                 modules={[Navigation]}
@@ -44,6 +44,15 @@ const RelatedProducts = (props) => {
                             <ProductItem/>
                         </SwiperSlide>
 
+                        <SwiperSlide>
+                            <ProductItem/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <ProductItem/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <ProductItem/>
+                        </SwiperSlide>
                         <SwiperSlide>
                             <ProductItem/>
                         </SwiperSlide>

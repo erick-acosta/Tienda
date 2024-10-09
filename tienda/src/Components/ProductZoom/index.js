@@ -32,7 +32,7 @@ const ProductZoom = () => {
 
                 <Swiper
                     slidesPerView={1}
-                    spaceBetween={0}
+                    spaceBetween={5}
                     navigation={false}
                     slidesPerGroup={1}
                     modules={[Navigation]}

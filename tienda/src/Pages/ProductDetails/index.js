@@ -9,7 +9,7 @@ import { MdOutlineCompareArrows } from "react-icons/md";
 import Tooltip from '@mui/material/Tooltip';
 import RelatedProducts from "./RelatedProducts";
 import { Link } from "react-router-dom";
-import Cart from "../Cart";
+
 
 const ProductDetails = () => {
 
@@ -64,7 +64,7 @@ const isActive =(index => {
                                 <p className=" mt-2"> loren ipsum dolor sit amet, consectetur adipiscing elit. loren loren ipsum dolor sit amet, consectetur adipiscing elit. loren loren ipsum dolor sit amet, consectetur adipiscing elit. loren</p>
 
                                 <div className=" productSize d-flex align-items-center">
-                                    <span className="text-light mr-2" >Talla : </span>
+                                    <span className=" mr-2" >Talla : </span>
                                         <ul className="list list-inline mb-0 pl-4">
                                             <li className="list-inline-item"> <a className={`tag ${activeSize === 0 ? 'active' : '' }`} onClick={() => isActive(0)}>2</a></li>
                                             <li className="list-inline-item"> <a className={`tag ${activeSize === 1 ? 'active' : '' }`} onClick={() => isActive(1)}>4</a></li>
@@ -175,7 +175,7 @@ const isActive =(index => {
 
                                                     <div className="info pl-5">
                                                         <div className="d-flex align-items-center w-100">
-                                                            <h5 className="text-light">02-09-85</h5>
+                                                            <h5 className="text-sucess">02-09-85</h5>
                                                             <div className="ml-auto">
                                                                 <Rating name="half-rating-read" value={5} size="small" precision={0.5} readOnly />
                                                             </div>
@@ -222,11 +222,15 @@ const isActive =(index => {
                                         
                                     </div>
                                 }
+                                
+                                
 
                             </div>
                         </div>
 
                         <br/>
+
+                        
 
                         <RelatedProducts title="PORDUCTOS PROMOCIONADOS"/>
 
