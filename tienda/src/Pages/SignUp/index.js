@@ -4,7 +4,7 @@ import { MyContext } from "../../App";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
-import Logo from "../../assets/img/AVATAR IG.png";
+import Logo from "../../assets/img/logo yrenestar.png";
 import { Link } from "react-router-dom";
 import GoogleImg from "../../assets/img/Google.png";
 
@@ -19,6 +19,7 @@ const SignUp = () => {
     return(
         <section className="section signInPage fondoLogin signUpPage">
         <div className="container signInContainer">
+        
             
 
         </div>
@@ -66,7 +67,7 @@ const SignUp = () => {
                                 </div>
 
                                 <div className="col-md-6 pr-0">
-                                    <Link to="/singIn" className="d-block w-100" > <Button className="btn-lg btn-big w-100 " variant="outlined" onClick={()=> context.setisHeaderFooterShow(true)}> Cancelar</Button> </Link>
+                                    <Link to="/" className="d-block w-100" > <Button className="btn-lg btn-big w-100 " variant="outlined" onClick={()=> context.setisHeaderFooterShow(true)}> Cancelar</Button> </Link>
                                 </div>
 
 
@@ -81,7 +82,7 @@ const SignUp = () => {
 
                             <h6 className="mt-4 text-center font-weight-bold ">O Ingresa Con Tu Red social</h6>
 
-                                <Button className="loginWithGoogle mt-2" ><img src={GoogleImg} className="w-75" alt="yrenestar"  /> </Button>
+                            <Button className="loginWithGoogle mt-2 ml-5  " ><img src={GoogleImg} className="w-100" alt="yrenestar"  /> </Button>
                                 
                          
 

@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { MyContext } from "../../App";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import Logo from "../../assets/img/AVATAR IG.png";
+import Logo from "../../assets/img/logo yrenestar.png";
 import { Link } from "react-router-dom";
 import GoogleImg from "../../assets/img/Google.png";
 
@@ -24,7 +24,7 @@ const SignIn = () => {
             <div className="container">
                     <div className="box card p-1 shadow border-1">
                         <div className="text-center">
-                            <img src={Logo} alt="yrenestar" />
+                            <img src={Logo} alt="yrenestar"   />
                         </div>
 
                         
@@ -50,7 +50,7 @@ const SignIn = () => {
 
                             <h6 className="mt-4 text-center font-weight-bold ">O Ingresa Con Tu Red social</h6>
 
-                                <Button className="loginWithGoogle mt-2" ><img src={GoogleImg} className="w-75" alt="yrenestar"  /> </Button>
+                                <Button className="loginWithGoogle mt-2 ml-5  " ><img src={GoogleImg} className="w-100" alt="yrenestar"  /> </Button>
                                 
                          
 

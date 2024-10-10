@@ -4,6 +4,7 @@ import Quantilybox from "../../Components/Quantilybox";
 import { IoClose } from "react-icons/io5";
 import { Button } from "@mui/material"
 import { MdShoppingCartCheckout } from "react-icons/md";
+import disfras1 from '../../assets/img/disfras2.png';
 
 const Cart = () => {
 
@@ -35,7 +36,7 @@ const Cart = () => {
                                 <Link to="/product/1">
                                     <div className="d-flex align-items-center cartItemimgWrapper">
                                         <div className="imgWrapper">
-                                            <img className="w-100" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/282671660_2092295574286526_7414430525195255114_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=yOABgyzzmdsQ7kNvgGm5lPu&_nc_ht=scontent-lim1-1.xx&_nc_gid=AKRa6hOWN9gNf_LmdlOcK5O&oh=00_AYBv9KPCmS_t3GjJBuBJU3p92OhAmQ4z9r0CC0vh7Ref8g&oe=66EEDE07" alt="logo" />
+                                            <img  className="w-100" src={disfras1} alt="logo" />
                                         </div>
 
                                         <div className="info px-3">
@@ -60,8 +61,8 @@ const Cart = () => {
                                 <td width="35%">
                                 <Link to="/product/1">
                                     <div className="d-flex align-items-center cartItemimgWrapper">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/282671660_2092295574286526_7414430525195255114_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=yOABgyzzmdsQ7kNvgGm5lPu&_nc_ht=scontent-lim1-1.xx&_nc_gid=AKRa6hOWN9gNf_LmdlOcK5O&oh=00_AYBv9KPCmS_t3GjJBuBJU3p92OhAmQ4z9r0CC0vh7Ref8g&oe=66EEDE07" alt="logo" />
+                                    <div className="imgWrapper">
+                                            <img  className="w-100" src={disfras1} alt="logo" />
                                         </div>
 
                                         <div className="info px-3">
@@ -86,8 +87,8 @@ const Cart = () => {
                                 <td width="35%">
                                 <Link to="/product/1">
                                     <div className="d-flex align-items-center cartItemimgWrapper">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/282671660_2092295574286526_7414430525195255114_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=yOABgyzzmdsQ7kNvgGm5lPu&_nc_ht=scontent-lim1-1.xx&_nc_gid=AKRa6hOWN9gNf_LmdlOcK5O&oh=00_AYBv9KPCmS_t3GjJBuBJU3p92OhAmQ4z9r0CC0vh7Ref8g&oe=66EEDE07" alt="logo" />
+                                    <div className="imgWrapper">
+                                            <img  className="w-100" src={disfras1} alt="logo" />
                                         </div>
 
                                         <div className="info px-3">
@@ -112,10 +113,9 @@ const Cart = () => {
                                 <td width="35%">
                                 <Link to="/product/1">
                                     <div className="d-flex align-items-center cartItemimgWrapper">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/282671660_2092295574286526_7414430525195255114_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=yOABgyzzmdsQ7kNvgGm5lPu&_nc_ht=scontent-lim1-1.xx&_nc_gid=AKRa6hOWN9gNf_LmdlOcK5O&oh=00_AYBv9KPCmS_t3GjJBuBJU3p92OhAmQ4z9r0CC0vh7Ref8g&oe=66EEDE07" alt="logo" />
+                                    <div className="imgWrapper">
+                                            <img  className="w-100" src={disfras1} alt="logo" />
                                         </div>
-
                                         <div className="info px-3">
                                             <h6>titulo del producto</h6>
                                             <Rating name="read-only" value={4.5} readOnly precision={0.5} size="small" />
@@ -138,8 +138,8 @@ const Cart = () => {
                                 <td width="35%">
                                 <Link to="/product/1">
                                     <div className="d-flex align-items-center cartItemimgWrapper">
-                                        <div className="imgWrapper">
-                                            <img className="w-100" src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/282671660_2092295574286526_7414430525195255114_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=yOABgyzzmdsQ7kNvgGm5lPu&_nc_ht=scontent-lim1-1.xx&_nc_gid=AKRa6hOWN9gNf_LmdlOcK5O&oh=00_AYBv9KPCmS_t3GjJBuBJU3p92OhAmQ4z9r0CC0vh7Ref8g&oe=66EEDE07" alt="logo" />
+                                    <div className="imgWrapper">
+                                            <img  className="w-100" src={disfras1} alt="logo" />
                                         </div>
 
                                         <div className="info px-3">
@@ -167,7 +167,7 @@ const Cart = () => {
                     </div>
 
                         <div className="col-md-3">
-                            <div className="card p-3 cartDetails">
+                            <div className="card p-3  shadow cartDetails">
                                 <h4> Total Compra</h4>
 
                                 <div className="d-flex align-items-center mb-3">
